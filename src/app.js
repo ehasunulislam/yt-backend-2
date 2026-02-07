@@ -31,8 +31,8 @@ app.get("/posts", async(req, res) => {
     const post = await postModel.find();
 
     return res.status(200).json({
-        message: "posts fetched successfully",
-        post
+        message: "success",
+        post,
     })
 })
 /* API Created end */
